@@ -1,0 +1,46 @@
+{
+  "domain": "biowell.ai",
+  "records": [
+    {
+      "type": "A",
+      "name": "@",
+      "ttl": 3600,
+      "values": ["75.2.60.5"]
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "ttl": 3600,
+      "value": "@"
+    },
+    {
+      "type": "MX",
+      "name": "@",
+      "ttl": 3600,
+      "values": [
+        {
+          "priority": 10,
+          "value": "mx1.forwardemail.net"
+        },
+        {
+          "priority": 20,
+          "value": "mx2.forwardemail.net"
+        }
+      ]
+    },
+    {
+      "type": "TXT",
+      "name": "@",
+      "ttl": 3600,
+      "values": [
+        "v=spf1 include:spf.forwardemail.net -all"
+      ]
+    },
+    {
+      "type": "A",
+      "name": "@",
+      "ttl": 3600,
+      "values": ["75.2.60.5"]
+    }
+  ]
+}
